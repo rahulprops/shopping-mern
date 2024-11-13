@@ -4,7 +4,7 @@ async function uploadimage(imagepath){
       const result= await cloudinary.uploader.upload(imagepath,{
         folder:"ecom"
       })
-      console.log('image upload sucessful')
+      // console.log('image upload sucessful')
       return result;
   } catch(err){return err}
 }
